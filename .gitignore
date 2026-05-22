@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+dist/
+outputs/
+*.log
+deploy/*.local.*
+deploy/boot-license.json
+*.tmp

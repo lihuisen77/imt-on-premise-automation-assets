@@ -1,0 +1,11 @@
+{
+  "name": "imt-on-premise-automation-assets",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:terminology-bug-list": "node reporting/build_terminology_bug_list.mjs"
+  },
+  "dependencies": {
+    "@oai/artifact-tool": "^0.0.1"
+  }
+}
