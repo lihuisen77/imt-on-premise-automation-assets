@@ -3,9 +3,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build:terminology-bug-list": "node reporting/build_terminology_bug_list.mjs"
+    "setup": "npm ci",
+    "doctor": "node scripts/doctor.mjs",
+    "build:terminology-bug-list": "node reporting/build_terminology_bug_list.mjs",
+    "run": "npm run doctor && npm run build:terminology-bug-list"
   },
   "dependencies": {
-    "@oai/artifact-tool": "^0.0.1"
+    "exceljs": "^4.4.0"
   }
 }
