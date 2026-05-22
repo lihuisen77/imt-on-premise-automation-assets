@@ -5,6 +5,7 @@
   "scripts": {
     "setup": "npm ci",
     "doctor": "node scripts/doctor.mjs",
+    "repo:check": "node scripts/repo-check.mjs",
     "build:terminology-bug-list": "node reporting/build_terminology_bug_list.mjs",
     "run": "npm run doctor && npm run build:terminology-bug-list"
   },

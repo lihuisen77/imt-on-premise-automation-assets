@@ -1,5 +1,10 @@
 # IMT On-Premise Automation Assets
 
+![Visibility](https://img.shields.io/badge/visibility-public-blue)
+![Node](https://img.shields.io/badge/node-%3E%3D24-339933)
+![Report](https://img.shields.io/badge/output-xlsx-2ea44f)
+![Status](https://img.shields.io/badge/status-runnable-success)
+
 This repository extracts automation-related assets from the main `imt-on-premise` project into a standalone, shareable package.
 
 ## Quick Start
@@ -16,6 +21,7 @@ Generated files are written to `outputs/`.
 - `npm run doctor`: checks the repo layout and reports which optional evidence files are absent.
 - `npm run build:terminology-bug-list`: generates the terminology bug workbook as `.xlsx`.
 - `./scripts/run-all.sh`: installs dependencies if needed, runs diagnostics, and generates the workbook in one step.
+- `npm run repo:check`: inspects repository description, topics, visibility, and current viewer permission through the GitHub API.
 
 ## Included
 
@@ -44,6 +50,17 @@ Generated files are written to `outputs/`.
 - `outputs/`: generated artifacts. Ignored by Git.
 
 See `DIRECTORY_MANIFEST.md` for a fuller inventory.
+
+## Organization Metadata
+
+For organization-side presentation and governance, this repository is intended to use:
+
+- Description: `Automation workflows, deployment references, and report-generation assets for IMT on-premise operations.`
+- Topics: `imt`, `automation`, `deployment`, `reporting`, `github-actions`, `on-premise`
+- Visibility: `public` only if the included materials remain sanitized
+- Permission model: a small admin group, write access for maintainers, and read access for broader consumers
+
+See `REPOSITORY_GOVERNANCE.md` for the full recommendation and review checklist.
 
 ## Notes
 
